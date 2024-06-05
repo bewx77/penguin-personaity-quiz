@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personality Quiz - Results</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page">
+        <h1>Quiz Results</h1>
+        <div class="result-container">
+            <div class="traits left">
+                <div class="trait-box" id="trait1">Trait 1</div>
+                <div class="trait-box" id="trait2">Trait 2</div>
+            </div>
+            <div class="result-image">
+                <img src="result.png" alt="Result Image" id="result-image">
+            </div>
+            <div class="traits right">
+                <div class="trait-box" id="trait3">Trait 3</div>
+                <div class="trait-box" id="trait4">Trait 4</div>
+            </div>
+        </div>
+        <div class="compatibility-section">
+            <div class="compatible">
+                <h2>Compatible Types</h2>
+                <div class="type" id="compatible1">
+                    <img src="type1.png" alt="Type 1 Image">
+                </div>
+                <div class="type" id="compatible2">
+                    <img src="type2.png" alt="Type 2 Image">
+                </div>
+            </div>
+            <div class="incompatible">
+                <h2>Incompatible Types</h2>
+                <div class="type" id="incompatible1">
+                    <img src="type3.png" alt="Type 3 Image">
+                </div>
+                <div class="type" id="incompatible2">
+                    <img src="type4.png" alt="Type 4 Image">
+                </div>
+            </div>
+        </div>
+        <button onclick="restartQuiz()">Restart Quiz</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
