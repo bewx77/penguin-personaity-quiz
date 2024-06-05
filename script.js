@@ -278,8 +278,12 @@ function calculateResult() {
 }
 
 function displayResults() {
+    const urlParams = new URLSearchParams(window.location.search);
     const result = JSON.parse(localStorage.getItem('quizResult')) || [];
-    const resultData = getMBTIData(result[0]); // Assuming the first type is the main result
+    const type = urlParams.get('type') || result[0];
+    const isResult = urlParams.get('isResult') || 'true';
+    
+    const resultData = getMBTIData(type); // Assuming the first type is the main result
 
     const traits = resultData.traits;
     const compatibleTypes = resultData.compatible;
@@ -297,6 +301,15 @@ function displayResults() {
     document.getElementById('incompatible1').querySelector('img').src = "/images/" + getMBTIData(incompatibleTypes[0]).image;
     document.getElementById('incompatible2').querySelector('img').src = "/images/" + getMBTIData(incompatibleTypes[1]).image;
 
+    document.getElementById('compatible1').onclick = () => redirectToType(compatibleTypes[0], false);
+    document.getElementById('compatible2').onclick = () => redirectToType(compatibleTypes[1], false);
+    document.getElementById('incompatible1').onclick = () => redirectToType(incompatibleTypes[0], false);
+    document.getElementById('incompatible2').onclick = () => redirectToType(incompatibleTypes[1], false);
+
+    if (isResult !== 'true') {
+        document.getElementById('quiz-result-title').style.display = 'none';
+    }
+
 }
 
 function getMBTIData(mbti) {
@@ -308,7 +321,7 @@ function getMBTIData(mbti) {
         window.location.href = 'index.html';
     }
     
-//     function redirectToType(type) {
-//         window.location.href = `results.html?type=${type}`;
-//     }
+    function redirectToType(type, isResult) {
+        window.location.href = `results.html?type=${type}&isResult=${isResult}`;
+    }
     
