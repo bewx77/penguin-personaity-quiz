@@ -5,11 +5,42 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #282c34;
+    /* background-color: #282c34; */
+    background-image: url('./images/night_sky.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     color: #fff;
 }
 .page {
     text-align: center;
+}
+
+.btn {
+    height: 20px;
+    width: 150px;
+    background-color:darksalmon;
+    position:absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 55%;
+    bottom: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    line-height: 1em;
+    padding: 10px;
+    color:white;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0px 8px 0px indianred, 0px 8px 20px #ffffff;
+    transition: all 0.2 ease;
+}
+.btn:active {
+    box-shadow: none;
+    top:57%;
 }
 
 .quiz-container {
