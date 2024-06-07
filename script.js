@@ -22,6 +22,7 @@ function loadQuestion() {
         questionElement.innerText = questions[currentQuestionIndex].question;
 
         document.getElementById('inner-progress-bar').style.width= ((currentQuestionIndex + 1) / 8 * 100) + "%";
+        document.getElementById('circle').innerText = (currentQuestionIndex+1);
 
         document.getElementById('optionA').innerText = options.A.desc;
         document.getElementById('optionB').innerText = options.B.desc;
