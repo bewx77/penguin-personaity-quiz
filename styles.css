@@ -1,37 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
-    /* background-color: #282c34; */
     background-image: url('./images/night_sky.jpg');
-    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    color: #fff;
+    background-attachment: fixed;
+    background-size: cover;
 }
-.page {
-    text-align: center;
+
+.home-container {
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#home-item-img {
+    flex: 1 0 60%;
+    display: flex;
+    align-items: center;
+    padding: 10%;
+}
+
+#home-item-btn {
+    flex: 1 0 40%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .btn {
     height: 20px;
     width: 150px;
     background-color:darksalmon;
-    position:absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 55%;
-    bottom: 0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
     font-weight: 800;
     letter-spacing: 0.1em;
-    line-height: 1em;
-    padding: 10px;
+    text-align: center;
+    line-height: 0em;
+    padding: 15px;
     color:white;
     text-decoration: none;
     border-radius: 5px;
@@ -43,8 +61,39 @@ body {
     top:57%;
 }
 
-.quiz-container {
+.quiz-page {
     text-align: center;
+    position: relative;
+}
+
+.progress-bar {
+    margin: 5px auto;
+}
+
+.progress-bar img {
+    width: 85%;
+}
+
+#progressbar {
+    background-color:rgb(15, 15, 20) ;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    border-radius: 13px;
+    /* (height of inner div) / 2 + padding */
+    padding: 5px;
+  }
+  
+  #progressbar>div {
+    background-color: lightblue;
+    width: 12.5%;
+    /* Adjust with JavaScript */
+    height: 20px;
+    border-radius: 10px;
+  }
+
+.quiz-container {
+    margin: 5px auto;
 }
 
 .question-box {
@@ -98,10 +147,7 @@ body {
 }
 
 .result-image img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    height: 300px
 }
 
 .compatibility-section {
@@ -121,6 +167,4 @@ body {
 .type img {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }

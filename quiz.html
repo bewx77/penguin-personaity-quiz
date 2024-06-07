@@ -7,12 +7,20 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="quiz-container">
-        <div id="question-box" class="question-box">
-            <h2 id="question">Question will appear here</h2>
-            <div class="options">
-                <button id="optionA" class="option" onclick="selectOption('A')">Option A</button>
-                <button id="optionB" class="option" onclick="selectOption('B')">Option B</button>
+    <div class="quiz-page">
+        <div class="progress-bar">
+            <img src="./images/mountain_progress_bar.png">
+            <div id="progressbar">
+                <div id="inner-progress-bar"></div>
+            </div>
+        </div>
+        <div class="quiz-container">
+            <div id="question-box" class="question-box">
+                <h2 id="question">Question will appear here</h2>
+                <div class="options">
+                    <button id="optionA" class="option" onclick="selectOption('A')">Option A</button>
+                    <button id="optionB" class="option" onclick="selectOption('B')">Option B</button>
+                </div>
             </div>
         </div>
     </div>

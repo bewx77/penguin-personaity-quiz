@@ -5,7 +5,7 @@ let currentQuestionIndex = 0;
 let matches = [];
 
 function setUpHomePage(){
-    document.getElementById("start-button").onclick = () => startQuiz();
+    document.getElementById("start-btn").onclick = () => startQuiz();
     
 }
 
@@ -20,6 +20,8 @@ function loadQuestion() {
         const options = questions[currentQuestionIndex].options;
 
         questionElement.innerText = questions[currentQuestionIndex].question;
+
+        document.getElementById('inner-progress-bar').style.width= ((currentQuestionIndex + 1) / 8 * 100) + "%";
 
         document.getElementById('optionA').innerText = options.A.desc;
         document.getElementById('optionB').innerText = options.B.desc;
