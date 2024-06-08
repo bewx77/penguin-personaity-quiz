@@ -6,7 +6,6 @@ let matches = [];
 
 function setUpHomePage(){
     document.getElementById("start-btn").onclick = () => startQuiz();
-    
 }
 
 function startQuiz() {
@@ -76,13 +75,18 @@ function displayResults() {
     const resultData = getMBTIData(type); // Assuming the first type is the main result
 
     const traits = resultData.traits;
+    const name = resultData.name;
     const compatibleTypes = resultData.compatible;
     const incompatibleTypes = resultData.notCompatible;
+
+    document.getElementById("restart-btn").onclick = () => restartQuiz();
 
     document.getElementById('trait1').innerText = traits[0];
     document.getElementById('trait2').innerText = traits[1];
     document.getElementById('trait3').innerText = traits[2];
     document.getElementById('trait4').innerText = traits[3];
+
+    document.getElementById('name-container').innerText = name.toUpperCase();
 
     document.getElementById('result-image').src = "/images/" + resultData.image;
 
@@ -97,7 +101,9 @@ function displayResults() {
     document.getElementById('incompatible2').onclick = () => redirectToType(incompatibleTypes[1], false);
 
     if (isResult !== 'true') {
-        document.getElementById('quiz-result-title').style.display = 'none';
+        document.getElementById('results-btn').style.display = 'inline';
+        document.getElementById('results-btn').onclick = () => backToResultPage();
+        document.getElementById('quiz-result-title').innerText = "They are...";
     }
 
 }
@@ -109,6 +115,10 @@ function getMBTIData(mbti) {
 function restartQuiz() {
     localStorage.removeItem('quizAnswers');
     window.location.href = 'index.html';
+}
+
+function backToResultPage(){
+    window.location.href = 'results.html';
 }
 
 function redirectToType(type, isResult) {

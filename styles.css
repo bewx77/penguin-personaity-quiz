@@ -53,6 +53,7 @@ body {
     color:white;
     text-decoration: none;
     border-radius: 5px;
+    border-color: transparent;
     box-shadow: 0px 8px 0px indianred, 0px 8px 20px #ffffff;
     transition: all 0.2 ease;
 }
@@ -93,7 +94,6 @@ body {
 #outer-progress-bar>div {
     background-color: lightblue;
     width: 12.5%;
-    /* Adjust with JavaScript */
     height: 20px;
     border-radius: 10px;
 }
@@ -147,25 +147,64 @@ body {
 
 .result-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    /* justify-content: center; */
+    align-content: center;
+}
+
+.header-container {
+    display: flex;
+    gap: 20px;
+}
+
+.header-container h1 {
+    flex: 1 0 50%;
+    color: white;
+}
+
+.header-container button {
     margin-top: 20px;
 }
 
+#results-btn {
+    display: none;
+}
+
+.name-container {
+    color: black;
+    font-size: 1.5em;
+    background-color:cornflowerblue;
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.traits-container {
+    display: flex;
+}
+ 
 .traits {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color:lightblue;
 }
 
 .trait-box {
-    background-color: #444;
+    background-color: transparent;
     padding: 10px;
-    margin: 5px;
+    margin: 20px;
+    border: 1px solid black;
+    text-align: center;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    width: 300px;
 }
 
+.result-image {
+    background-color: white;
+}
 .result-image img {
     height: 300px
 }
@@ -173,11 +212,14 @@ body {
 .compatibility-section {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    background-color: cornflowerblue;
 }
 
 .compatible, .incompatible {
-    text-align: center;
+    text-align:end;
+    width: 200px;
+    letter-spacing: 3px;
+    font-weight: 600;
 }
 
 .type {
@@ -187,4 +229,4 @@ body {
 .type img {
     width: 100px;
     height: 100px;
-}
+} 

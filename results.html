@@ -7,9 +7,14 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="page">
-        <h1 id="quiz-result-title">Quiz Results</h1>
-        <div class="result-container">
+    <div class="result-container">
+        <div class="header-container">
+            <h1 id="quiz-result-title">You are...</h1>
+            <button class="btn" id="results-btn">RESULTS</button>
+            <button class="btn" id="restart-btn">RESTART</button>
+        </div>
+        <div class="name-container" id="name-container">ISTJ Penguin</div>
+        <div class="traits-container">
             <div class="traits left">
                 <div class="trait-box" id="trait1">Trait 1</div>
                 <div class="trait-box" id="trait2">Trait 2</div>
@@ -24,25 +29,27 @@
         </div>
         <div class="compatibility-section">
             <div class="compatible">
-                <h2>Compatible Types</h2>
-                <div class="type" id="compatible1">
-                    <img src="type1.png" alt="Type 1 Image">
-                </div>
-                <div class="type" id="compatible2">
-                    <img src="type2.png" alt="Type 2 Image">
-                </div>
+                <h2>Compatible Types:</h2>
             </div>
+            <div class="type" id="compatible1">
+                <img src="type1.png" alt="Type 1 Image">
+            </div>
+            <div class="type" id="compatible2">
+                <img src="type2.png" alt="Type 2 Image">
+            </div>
+
             <div class="incompatible">
-                <h2>Incompatible Types</h2>
-                <div class="type" id="incompatible1">
-                    <img src="type3.png" alt="Type 3 Image">
-                </div>
-                <div class="type" id="incompatible2">
-                    <img src="type4.png" alt="Type 4 Image">
-                </div>
+                <h2>Incompatible Types:</h2>
             </div>
+            <div class="type" id="incompatible1">
+                <img src="type3.png" alt="Type 3 Image">
+            </div>
+            <div class="type" id="incompatible2">
+                <img src="type4.png" alt="Type 4 Image">
+            </div>
+
         </div>
-        <button class="btn">RESTART</button>
+        
     </div>
 
     <script type="module" src="script.js"></script>
