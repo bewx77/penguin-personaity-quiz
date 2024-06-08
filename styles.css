@@ -10,11 +10,12 @@ body {
     align-items: center;
     height: 100vh;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url('./images/night_sky.jpg');
+    background-color: #0E1C36;
+    /* background-image: url('./images/night_sky.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: cover; */
 }
 
 .home-container {
@@ -35,7 +36,7 @@ body {
 .btn {
     height: 20px;
     width: 150px;
-    background-color:darksalmon;
+    background-color:#BA5C12;
     font-size: 20px;
     font-weight: 800;
     letter-spacing: 0.1em;
@@ -46,7 +47,7 @@ body {
     text-decoration: none;
     border-radius: 5px;
     border-color: transparent;
-    box-shadow: 0px 8px 0px indianred, 0px 8px 20px #ffffff;
+    box-shadow: 0px 8px 0px #72370b, 0px 8px 20px #FFEDE1;
     transition: all 0.2 ease;
     margin-left: 8px;
 }
@@ -142,6 +143,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    width: 80vw;
     /* justify-content: center; */
     align-content: center;
 }
@@ -166,8 +168,9 @@ body {
 
 .name-container {
     color: black;
+    width: 100%;
     font-size: 1.5em;
-    background-color:cornflowerblue;
+    background-color:#AFCBFF;
     text-align: center;
     padding: 10px;
     letter-spacing: 3px;
@@ -176,50 +179,53 @@ body {
 
 .traits-container {
     display: flex;
+    width: 100%;
 }
- 
+
 .traits {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color:lightblue;
+    background-color:white;
+    width: 50%;
 }
 
 .trait-box {
     background-color: transparent;
     padding: 10px;
-    margin: 20px;
-    border: 1px solid black;
+    margin: 10px 30px;
+    border: 1.5px solid black;
     text-align: center;
-    border-radius: 5px;
-    width: 300px;
+    border-radius: 50px;
+    /* max-width: 300px; */
 }
 
 .result-image {
-    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 50%;
+    background-color: #FFEDE1;
 }
+
 .result-image img {
-    height: 300px
+    width:100%;
 }
 
 .compatibility-section {
     display: flex;
     justify-content: space-around;
-    background-color: cornflowerblue;
+    background-color: #AFCBFF;
+    width: 100%;
 }
 
 .compatible, .incompatible {
-    text-align:end;
-    width: 200px;
-    letter-spacing: 3px;
-    font-weight: 600;
+    font-size: 1.5vw;
+    padding: 10px;
 }
 
-.type {
-    margin: 10px;
-}
 
 .type img {
-    width: 100px;
-    height: 100px;
+    padding: 5px;
+    width: 100%;
 } 
