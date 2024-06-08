@@ -88,12 +88,12 @@ function displayResults() {
 
     document.getElementById('name-container').innerText = name.toUpperCase();
 
-    document.getElementById('result-image').src = "/images/" + resultData.image;
+    document.getElementById('result-image').src = "./images/" + resultData.image;
 
-    document.getElementById('compatible1').querySelector('img').src = "/images/" + getMBTIData(compatibleTypes[0]).image;
-    document.getElementById('compatible2').querySelector('img').src = "/images/" + getMBTIData(compatibleTypes[1]).image;
-    document.getElementById('incompatible1').querySelector('img').src = "/images/" + getMBTIData(incompatibleTypes[0]).image;
-    document.getElementById('incompatible2').querySelector('img').src = "/images/" + getMBTIData(incompatibleTypes[1]).image;
+    document.getElementById('compatible1').querySelector('img').src = "./images/" + getMBTIData(compatibleTypes[0]).image;
+    document.getElementById('compatible2').querySelector('img').src = "./images/" + getMBTIData(compatibleTypes[1]).image;
+    document.getElementById('incompatible1').querySelector('img').src = "./images/" + getMBTIData(incompatibleTypes[0]).image;
+    document.getElementById('incompatible2').querySelector('img').src = "./images/" + getMBTIData(incompatibleTypes[1]).image;
 
     document.getElementById('compatible1').onclick = () => redirectToType(compatibleTypes[0], false);
     document.getElementById('compatible2').onclick = () => redirectToType(compatibleTypes[1], false);
