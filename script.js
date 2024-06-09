@@ -16,12 +16,16 @@ function loadQuestion() {
     console.log(questions);
     if (currentQuestionIndex < questions.length) {
         const questionElement = document.getElementById('question');
-        const options = questions[currentQuestionIndex].options;
+        const questionData = questions[currentQuestionIndex]
+        const options = questionData.options;
+        const image = questionData.image;
 
         questionElement.innerText = questions[currentQuestionIndex].question;
 
         document.getElementById('inner-progress-bar').style.width= ((currentQuestionIndex + 1) / 8 * 100) + "%";
         document.getElementById('circle').innerText = (currentQuestionIndex+1);
+
+        document.getElementById('question-img').src = "/images/" + image;
 
         document.getElementById('optionA').innerText = options.A.desc;
         document.getElementById('optionB').innerText = options.B.desc;

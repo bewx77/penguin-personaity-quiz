@@ -1,106 +1,114 @@
 [
     {
-        "question": "Which statement do you relate to more?",
+        "question": "Oh! What happened? You found out you woke up as a penguin… After the initial shock, you start to collect your thoughts:",
         "options": {
             "A": { 
-                "desc": "“Whatever that keeps the peace of the group man”",
-                "matches": ["ESFJ", "ISFJ", "ENFJ", "ENFJ", "ESTP", "ISTP", "ENTP", "INTP"]
-            },
-            "B": { 
-                "desc": "“Peace begins with yourself. How am I supposed to help others without caring for my own well-being first?”",
-                "matches": ["ESTJ", "ISTJ", "ENFP", "INFP", "ESFP", "ISFP", "ENTJ", "INTJ"]
-            }
-        }
-    },
-    {
-        "question": "When faced with a new environment, how would you react?",
-        "options": {
-            "A": { 
-                "desc": "Find familiarity in my past experiences and adapt accordingly to what has been tried and tested before.",
+                "desc": "“Oh no what is going on? I wonder if it feels the same walking in flippers...”",
                 "matches": ["ESFJ", "ISFJ", "ESTJ", "ISTJ", "ENFP", "INFP", "ENTP", "INTP"]
             },
             "B": { 
-                "desc": "Hmm I will just see how this goes and adapt accordingly.",
+                "desc": "Wow this is so interesting! Let’s find out what I can do as a penguin!",
                 "matches": ["ENFJ", "INFJ", "ESFP", "ISFP", "ESTP", "ISTP", "ENTJ", "INTJ"]
             }
-        }
+        },
+        "image": "question_1.jpeg"
     },
     {
-        "question": "After eating at a restaurant, you felt that the food was awesome. However, upon searching the reviews, it only had a 2.9 stars rating. How would you react?",
+        "question": "Knock knock! You open the door to 4 other penguins. “Hey! Hurry up, we are going to be late for the annual cooking competition!\"",
         "options": {
             "A": { 
-                "desc": "Oh did I order something wrong? Maybe the food wasn’t as good as I thought?",
+                "desc": "Woah a cooking competition? Let’s go!",
+                "matches": ["ESTP", "ESFP", "ENTP", "ENFP", "ISTP", "ISFP", "INTP", "INFP"]
+            },
+            "B": { 
+                "desc": "Er what is going on? What competition? What are we going to cook?",
+                "matches": ["ESTJ", "ESFJ", "ENTJ", "ENFJ", "ISTJ", "ISFJ", "INTJ", "INFJ"]
+            }
+        },
+        "image":"question_2.jpeg"
+    },
+    {
+        "question": "Before you know it, your friends dragged you to the townhall to begin the competition. “Hey seems like each one of us has to pick a task: Washing, Cutting, Cooking, Tasting, Plating.\"",
+        "options": {
+            "A": { 
+                "desc": "You immediately picked the task you know you are good at.",
                 "matches": ["ESTJ", "ISTJ", "ENFP", "INFP", "ESFP", "ISFP", "ENTJ", "INTJ"]
             },
             "B": { 
-                "desc": "Weird, the food was great though.",
+                "desc": "I will just pick the tasks that is leftover. The rest can pick first!",
                 "matches": ["ESFJ", "ISFJ", "ENFJ", "ENFJ", "ESTP", "ISTP", "ENTP", "INTP"]
             }
-        }
+        },
+        "image":"question_3.jpeg"
     },
     {
-        "question": "Which statement do you relate to more?",
+        "question": "2 hrs of cooking had past and it was time for the judging. Your team huddled together in hopes that the judge would like it… “Hmm the salmon was… raw. I can't eat this.” Suddenly, you see your teammate tearing up...",
         "options": {
             "A": { 
-                "desc": "I take information that I have gathered through my experiences and come up with a lot of different possibilities (e.g. brainstorming)",
-                "matches": ["ESFJ", "ISFJ", "ESTJ", "ISTJ", "ENFP", "INFP", "ENTP", "INTP"]
+                "desc": "You immediately go and give your teammate a hug and seeing him makes you want to tear up too, knowing everyone's hard work in this.",
+                "matches": ["ESFJ", "ESFP", "ENFJ", "ENFP", "ISFJ", "ISFP", "INFJ", "INFP"]
             },
             "B": { 
                 "desc": "I like to narrow down the observations I have gathered at the current moment to some kind of interpretation.",
+                "matches": ["ESTJ", "ESTP", "ENTJ", "ENTP", "ISTJ", "ISTP", "INTJ", "INTP"]
+            }
+        },
+        "image":"question_4.jpeg"
+    },
+    {
+        "question": "Despite the mistake, your group decided to head down to the nearest igloo bar to raise everyone's spirits! Since the bar was full, the group had to split:",
+        "options": {
+            "A": { 
+                "desc": "You sit with the penguins that reflected on how today went and the funny moments that happened during the competition.",
+                "matches": ["ESTJ", "ESTP", "ESFJ", "ESFP", "ISTJ", "ISTP", "ISFJ", "ISFP"]
+            },
+            "B": { 
+                "desc": "You sit with the penguins that talked about absolutely anything like the possibilities of penguins ever being humans.",
+                "matches": ["ENTJ", "ENTP", "ENFJ", "ENFP", "INTJ", "INTP", "INFJ", "INFP"]
+            }
+        },
+        "image":"question_5.jpeg"
+    },
+    {
+        "question": "The night was great and you felt like the drinks you had were awesome too. Upon searching the Penguin Reviews, this bar surprisingly only had a 2.9 stars rating.",
+        "options": {
+            "A": { 
+                "desc": "Oh did i got lucky and ordered something good? Maybe the drinks weren't as good as i thought?",
+                "matches": ["ESTJ", "ISTJ", "ENFP", "INFP", "ESFP", "ISFP", "ENTJ", "INTJ"]
+            },
+            "B": { 
+                "desc": "Penguins are weird, the drinks were good though.",
+                "matches": ["ESFJ", "ISFJ", "ENFJ", "ENFJ", "ESTP", "ISTP", "ENTP", "INTP"]
+            }
+        },
+        "image":"question_6.jpeg"
+    },
+    {
+        "question": "After an eventful day, you bid farewell to the new friends you had made and went back to tug yourself into bed. Staring at the icy ceiling:",
+        "options": {
+            "A": { 
+                "desc": "You play all the different scenarios in your mind about how tomorrow might go as your new penguin self, till you fall asleep…",
+                "matches": ["ESFJ", "ISFJ", "ESTJ", "ISTJ", "ENFP", "INFP", "ENTP", "INTP"]
+            },
+            "B": { 
+                "desc": "You play a singular scenario in your mind about how tomorrow would most likely go, from morning to night, till you fall asleep…",
                 "matches": ["ENFJ", "INFJ", "ESFP", "ISFP", "ESTP", "ISTP", "ENTJ", "INTJ"]
             }
-        }
+        },
+        "image":"question_7.jpeg"
     },
     {
-        "question": "Do you recharge by spending time alone or being around people?",
+        "question": "Ring ring… your alarm rang. And suddenly you are back home and back to your human self!",
         "options": {
             "A": { 
-                "desc": "Alone (I)",
-                "matches": ["ISTJ", "ISTP", "ISFJ", "ISFP", "INTJ", "INTP", "INFJ", "INFP"]
-            },
-            "B": { 
-                "desc": "Being around people (E)",
+                "desc": "Damn… i got to go find my friends and tell them all about it",
                 "matches": ["ESTJ", "ESTP", "ESFJ", "ESFP", "ENTJ", "ENTP", "ENFJ", "ENFP"]
-            }
-        }
-    },
-    {
-        "question": "Do you prefer conversations that explore abstract ideas and one’s imagination or ones that focus on concrete and realistic topics?",
-        "options": {
-            "A": { 
-                "desc": "Abstract ideas (N)",
-                "matches": ["ENTJ", "ENTP", "ENFJ", "ENFP", "INTJ", "INTP", "INFJ", "INFP"]
             },
             "B": { 
-                "desc": "Concrete, realistic topics (S)",
-                "matches": ["ESTJ", "ESTP", "ESFJ", "ESFP", "ISTJ", "ISTP", "ISFJ", "ISFP"]
+                "desc": "Oh my… let me think about what has just happened…",
+                "matches": ["ISTJ", "ISTP", "ISFJ", "ISFP", "INTJ", "INTP", "INFJ", "INFP"]
             }
-        }
-    },
-    {
-        "question": "There’s an upcoming trip! Do you prefer to at least have some sort of a plan or let’s just wing it?",
-        "options": {
-            "A": { 
-                "desc": "Planning ahead (J)",
-                "matches": ["ESTJ", "ESFJ", "ENTJ", "ENFJ", "ISTJ", "ISFJ", "INTJ", "INFJ"]
-            },
-            "B": { 
-                "desc": "Spontaneity (P)",
-                "matches": ["ESTP", "ESFP", "ENTP", "ENFP", "ISTP", "ISFP", "INTP", "INFP"]
-            }
-        }
-    },
-    {
-        "question": "When making decisions, do you rely more on logic or feelings?",
-        "options": {
-            "A": { 
-                "desc": "Logic (T)",
-                "matches": ["ESTJ", "ESTP", "ENTJ", "ENTP", "ISTJ", "ISTP", "INTJ", "INTP"]
-            },
-            "B": { 
-                "desc": "Feelings (F)",
-                "matches": ["ESFJ", "ESFP", "ENFJ", "ENFP", "ISFJ", "ISFP", "INFJ", "INFP"]
-            }
-        }
+        },
+        "image":"question_8.jpeg"
     }
 ]
