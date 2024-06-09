@@ -165,6 +165,7 @@ body {
 .header-container {
     display: flex;
     gap: 20px;
+    margin-top: 20px;
 }
 
 .header-container h1 {
@@ -179,7 +180,13 @@ body {
 #results-btn {
     display: none;
 }
-
+.penguin-container{
+    display: flex;
+    height: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
 .name-container {
     color: black;
     width: 100%;
@@ -211,6 +218,7 @@ body {
     border: 1.5px solid black;
     text-align: center;
     border-radius: 50px;
+    font-size: 0.5em;
     /* max-width: 300px; */
 }
 
