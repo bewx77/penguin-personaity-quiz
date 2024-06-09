@@ -13,7 +13,7 @@ function startQuiz() {
 }
 
 function loadQuestion() {
-    console.log(questions);
+    // console.log(questions);
     if (currentQuestionIndex < questions.length) {
         const questionElement = document.getElementById('question');
         const questionData = questions[currentQuestionIndex]
