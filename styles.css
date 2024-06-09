@@ -8,14 +8,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 95vh;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #0E1C36;
-    /* background-image: url('./images/night_sky.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover; */
 }
 
 .home-container {
@@ -30,7 +25,7 @@ body {
 }
 
 #home-img {
-    width: 60vw;
+    width: 90%;
 }
 
 .btn {
