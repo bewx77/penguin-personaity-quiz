@@ -84,31 +84,32 @@ function displayResults() {
     const incompatibleTypes = resultData.notCompatible;
 
     document.getElementById("restart-btn").onclick = () => restartQuiz();
+    document.getElementById('results-img').src = "images/" + resultData.image
 
-    document.getElementById('trait1').innerText = traits[0];
-    document.getElementById('trait2').innerText = traits[1];
-    document.getElementById('trait3').innerText = traits[2];
-    document.getElementById('trait4').innerText = traits[3];
+    // document.getElementById('trait1').innerText = traits[0];
+    // document.getElementById('trait2').innerText = traits[1];
+    // document.getElementById('trait3').innerText = traits[2];
+    // document.getElementById('trait4').innerText = traits[3];
 
-    document.getElementById('name-container').innerText = name.toUpperCase();
+    // document.getElementById('name-container').innerText = name.toUpperCase();
 
-    document.getElementById('result-image').src = "images/" + resultData.image;
+    // document.getElementById('result-image').src = "images/" + resultData.image;
 
-    document.getElementById('compatible1').querySelector('img').src = "images/" + getMBTIData(compatibleTypes[0]).image;
-    document.getElementById('compatible2').querySelector('img').src = "images/" + getMBTIData(compatibleTypes[1]).image;
-    document.getElementById('incompatible1').querySelector('img').src = "images/" + getMBTIData(incompatibleTypes[0]).image;
-    document.getElementById('incompatible2').querySelector('img').src = "images/" + getMBTIData(incompatibleTypes[1]).image;
+    // document.getElementById('compatible1').querySelector('img').src = "images/" + getMBTIData(compatibleTypes[0]).image;
+    // document.getElementById('compatible2').querySelector('img').src = "images/" + getMBTIData(compatibleTypes[1]).image;
+    // document.getElementById('incompatible1').querySelector('img').src = "images/" + getMBTIData(incompatibleTypes[0]).image;
+    // document.getElementById('incompatible2').querySelector('img').src = "images/" + getMBTIData(incompatibleTypes[1]).image;
 
-    document.getElementById('compatible1').onclick = () => redirectToType(compatibleTypes[0], false);
-    document.getElementById('compatible2').onclick = () => redirectToType(compatibleTypes[1], false);
-    document.getElementById('incompatible1').onclick = () => redirectToType(incompatibleTypes[0], false);
-    document.getElementById('incompatible2').onclick = () => redirectToType(incompatibleTypes[1], false);
+    // document.getElementById('compatible1').onclick = () => redirectToType(compatibleTypes[0], false);
+    // document.getElementById('compatible2').onclick = () => redirectToType(compatibleTypes[1], false);
+    // document.getElementById('incompatible1').onclick = () => redirectToType(incompatibleTypes[0], false);
+    // document.getElementById('incompatible2').onclick = () => redirectToType(incompatibleTypes[1], false);
 
-    if (isResult !== 'true') {
-        document.getElementById('results-btn').style.display = 'inline';
-        document.getElementById('results-btn').onclick = () => backToResultPage();
-        document.getElementById('quiz-result-title').innerText = "They are...";
-    }
+    // if (isResult !== 'true') {
+    //     document.getElementById('results-btn').style.display = 'inline';
+    //     document.getElementById('results-btn').onclick = () => backToResultPage();
+    //     document.getElementById('quiz-result-title').innerText = "They are...";
+    // }
 
 }
 

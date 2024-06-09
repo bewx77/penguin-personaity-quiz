@@ -181,7 +181,15 @@ body {
 #results-btn {
     display: none;
 }
-.penguin-container{
+
+.results-img-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+    height: 90%;
+}
+/* .penguin-container{
     display: flex;
     height: 80%;
     flex-direction: column;
@@ -226,7 +234,6 @@ body {
     text-align: center;
     border-radius: 50px;
     font-size: 0.5em;
-    /* max-width: 300px; */
 }
 
 .result-image {
@@ -238,7 +245,6 @@ body {
 }
 
 .result-image img {
-    /* width:100%; */
     height: 30vh;
 }
 
@@ -258,4 +264,4 @@ body {
 .type img {
     padding: 5px;
     width: 100%;
-} 
+}   */

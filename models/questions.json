@@ -63,7 +63,7 @@
                 "matches": ["ESTJ", "ESTP", "ESFJ", "ESFP", "ISTJ", "ISTP", "ISFJ", "ISFP"]
             },
             "B": { 
-                "desc": "You sit with the penguins that talked about absolutely anything, even crazy topics like the possibilities of penguins ever being humans.",
+                "desc": "You chill with the penguins that talked about absolutely anything, even abstract topics like the possibilities of penguins ever being humans.",
                 "matches": ["ENTJ", "ENTP", "ENFJ", "ENFP", "INTJ", "INTP", "INFJ", "INFP"]
             }
         },
@@ -101,11 +101,11 @@
         "question": "Ring ring… your alarm rang. And suddenly you are back home and back to your human self!",
         "options": {
             "A": { 
-                "desc": "Damn… i got to go find my friends and tell them all about it",
+                "desc": "Damn… i got to go and tell as many people about my crazy adventure",
                 "matches": ["ESTJ", "ESTP", "ESFJ", "ESFP", "ENTJ", "ENTP", "ENFJ", "ENFP"]
             },
             "B": { 
-                "desc": "Oh my… let me think about what has just happened…",
+                "desc": "Oh my… let me think about what has just happened and maybe find some of my close friends to talk about what just had happened...",
                 "matches": ["ISTJ", "ISTP", "ISFJ", "ISFP", "INTJ", "INTP", "INFJ", "INFP"]
             }
         },
