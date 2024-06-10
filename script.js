@@ -13,7 +13,6 @@ function startQuiz() {
 }
 
 function loadQuestion() {
-    // console.log(questions);
     if (currentQuestionIndex < questions.length) {
         const questionElement = document.getElementById('question');
         const questionData = questions[currentQuestionIndex]
@@ -42,7 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
         loadQuestion();
     } else if (window.location.pathname.endsWith('results.html')) {
         displayResults();
-    } else {
+    } else if (window.location.pathname.endsWith('all-penguins.html')){
+        setUpAllPenguinsPage();
+    }
+    else {
         setUpHomePage();
     }
 });
@@ -84,7 +86,9 @@ function displayResults() {
     const incompatibleTypes = resultData.notCompatible;
 
     document.getElementById("restart-btn").onclick = () => restartQuiz();
+    document.getElementById('results-btn').onclick = () => goToAllPenguinsPage();
     document.getElementById('results-img').src = "images/" + resultData.image
+    
 
     // document.getElementById('trait1').innerText = traits[0];
     // document.getElementById('trait2').innerText = traits[1];
@@ -113,6 +117,28 @@ function displayResults() {
 
 }
 
+function setUpAllPenguinsPage(){
+    document.getElementById("back-btn").onclick = () => backToResultPage();
+    document.getElementById("restart-btn").onclick = () => restartQuiz();
+    var modal = document.getElementById("myModal");
+    var modalImg = document.getElementById("img01");
+
+    for (let i=1; i<17; i++){
+        var img = document.getElementById("img-" + i);
+        img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        }
+    }
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+    modal.style.display = "none";
+    }
+}
+
 function getMBTIData(mbti) {
     return personalities.find(personality => personality.mbti === mbti);
 }
@@ -124,6 +150,10 @@ function restartQuiz() {
 
 function backToResultPage(){
     window.location.href = 'results.html';
+}
+
+function goToAllPenguinsPage(){
+    window.location.href = 'all-penguins.html';
 }
 
 function redirectToType(type, isResult) {

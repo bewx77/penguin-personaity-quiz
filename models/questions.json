@@ -1,20 +1,20 @@
 [
     {
-        "question": "Oh! What happened? You found out you woke up as a penguin… After the initial shock, you start to collect your thoughts:",
+        "question": "Oh! What happened? \nYou found out you woke up as a penguin… \nAfter the initial shock, you start to collect your thoughts:",
         "options": {
             "A": { 
                 "desc": "“Oh no what is going on? I wonder if it feels the same walking in flippers...”",
                 "matches": ["ESFJ", "ISFJ", "ESTJ", "ISTJ", "ENFP", "INFP", "ENTP", "INTP"]
             },
             "B": { 
-                "desc": "Wow this is so interesting! Let’s find out what I can do as a penguin!",
+                "desc": "Interesting... Let’s find out what I can do as a penguin...",
                 "matches": ["ENFJ", "INFJ", "ESFP", "ISFP", "ESTP", "ISTP", "ENTJ", "INTJ"]
             }
         },
         "image": "question_1.jpeg"
     },
     {
-        "question": "Knock knock! You open the door to 4 other penguins. “Hey! Hurry up, we are going to be late for the annual cooking competition!\"",
+        "question": "Knock knock! You open the door to 4 other penguins. \n“Hey! Hurry up, we are going to be late for the annual cooking competition!\"",
         "options": {
             "A": { 
                 "desc": "Woah a cooking competition? Let’s go!",
@@ -28,7 +28,7 @@
         "image":"question_2.jpeg"
     },
     {
-        "question": "Before you know it, your friends dragged you to the townhall to begin the competition. “Hey seems like each one of us has to pick a task: Washing, Cutting, Cooking, Tasting, Plating.\"",
+        "question": "Before you know it, your friends dragged you to the townhall to begin the competition. \n“Hey seems like each one of us has to pick a task: Washing, Cutting, Cooking, Tasting, Plating.\"",
         "options": {
             "A": { 
                 "desc": "You immediately picked the task you know you are good at.",
@@ -42,7 +42,7 @@
         "image":"question_3.jpeg"
     },
     {
-        "question": "2 hrs of cooking had past and it was time for the judging. Your team huddled together in hopes that the judge would like it… “Hmm the salmon was… raw. I can't eat this.” Suddenly, you see your teammate tearing up...",
+        "question": "Hours of cooking had past and it was time for the judging. \nYour team huddled together in hopes that the judge would like it… “Hmm the salmon was… raw. I can't eat this.” \nSuddenly, you see your teammate tearing up...",
         "options": {
             "A": { 
                 "desc": "You immediately go and give your teammate a hug and seeing him makes you want to tear up too, knowing everyone's hard work in this.",
@@ -56,7 +56,7 @@
         "image":"question_4.jpeg"
     },
     {
-        "question": "Despite the mistake, your group decided to head down to the nearest igloo bar to raise everyone's spirits! Since the bar was full, the group had to split:",
+        "question": "Despite the mistake, your group decided to head down to the nearest igloo bar to raise everyone's spirits! \nSince the bar was full, the group had to split:",
         "options": {
             "A": { 
                 "desc": "You sit with the penguins that were looking back on the funny moments that happened during the competition.",
@@ -70,7 +70,7 @@
         "image":"question_5.jpeg"
     },
     {
-        "question": "The night was great and you felt like the drinks you had were awesome too. Upon searching the Penguin Reviews, this bar surprisingly only had a 2.9 stars rating.",
+        "question": "The night was great and you felt like the drinks you had were awesome too. \nUpon searching the Penguin Reviews, this bar surprisingly only had a 2.9 stars rating.",
         "options": {
             "A": { 
                 "desc": "Oh did i got lucky and ordered something good? Maybe the drinks weren't as good as i thought?",
@@ -84,7 +84,7 @@
         "image":"question_6.jpeg"
     },
     {
-        "question": "After an eventful day, you bid farewell to the new friends you had made and went back to tug yourself into bed. Staring at the icy ceiling:",
+        "question": "After an eventful day, you bid farewell to the new friends you had made and went back to tug yourself into bed. \nStaring at the icy ceiling:",
         "options": {
             "A": { 
                 "desc": "You play all the different scenarios in your mind about how tomorrow might go",
