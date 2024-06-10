@@ -66,13 +66,13 @@ body {
 }
 
 .progress-bar img {
-    width: 95%;
+    width: 80%;
 }
 
 #outer-progress-bar {
     background-color:white;
     border-radius: 13px;
-    width: 95%;
+    width: 80%;
     padding: 5px;
     margin-top: 5px;
 }
@@ -102,17 +102,17 @@ body {
     font-family:'Times New Roman', Times, serif;
     color: white;
     background-color: transparent;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .question-img-box {
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 .question-img-box img {
-    width: 70%;
+    width: 60%;
     border-radius: 10px;
 }
 
@@ -123,6 +123,9 @@ body {
     width: 90%;
 }
 
+.question-box h2 {
+    margin-block-end: 0px;
+}
 
 .option-box {
     width: 90%;
@@ -205,7 +208,7 @@ body {
 #all-header-container {
     display: flex;
     justify-content: end;
-    padding-right: 15px;
+    padding-right: 40px;
     padding-bottom: 20px;
 }
 #all-penguin-title {
@@ -214,7 +217,7 @@ body {
 
 .gallery img {
     padding: 10px;
-    width: 195px;
+    width: 180px;
 }
 
 .modal {
