@@ -19,7 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    max-width: 440px;
+    max-width: 400px;
     width: 100%;
 }
 
@@ -54,7 +54,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 440px;
+    max-width: 400px;
     
 }
 
@@ -111,7 +111,7 @@ body {
     margin-top: 20px;
 }
 .question-img-box img {
-    width: 90%;
+    width: 80%;
     border-radius: 10px;
 }
 
@@ -137,7 +137,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-    font-size: 1.1em;
+    font-size: 1em;
     margin-top: 20px;
     min-width: 100%;
 }
@@ -151,7 +151,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 95vh;
-    max-width: 440px;
+    max-width: 400px;
     align-content: center;
     width: 100%;
 }
@@ -187,8 +187,14 @@ body {
     width: 100%;
 }
 
+.btn.result {
+    height: 15px;
+    width: 110px;
+    font-size: 0.8em;
+}
+
 .all-penguin-container{
-    max-width: 440px;
+    max-width: 400px;
     max-height: 100%;
     width: 100%;
     display: flex;
@@ -198,8 +204,8 @@ body {
 #all-header-container {
     display: flex;
     justify-content: end;
-    padding-right: 30px;
-    padding-bottom: 30px;
+    padding-right: 15px;
+    padding-bottom: 20px;
 }
 #all-penguin-title {
     font-size: 1.2em;
@@ -207,7 +213,7 @@ body {
 
 .gallery img {
     padding: 10px;
-    width: 205px;
+    width: 195px;
 }
 
 .modal {
