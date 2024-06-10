@@ -91,14 +91,14 @@ body {
 }
 
 .circle {
-    width: 2em;
-    height: 2em;
+    width: 30px;
+    height: 30px;
     border: 1px solid white;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5em;
+    font-size: 1em;
     font-family:'Times New Roman', Times, serif;
     color: white;
     background-color: transparent;
@@ -135,7 +135,7 @@ body {
     background-color: transparent;
     color: #fff;
     border: none;
-    padding: 20px;    
+    padding: 15px;    
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255);;
     border-radius: 5px;
@@ -163,6 +163,8 @@ body {
 .header-container {
     display: flex;
     margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
     width: 100%;
 }
 
@@ -188,7 +190,7 @@ body {
 }
 
 #results-img {
-    width: 100%;
+    width: 90%;
 }
 
 .btn.result {
