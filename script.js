@@ -1,21 +1,5 @@
 import questions from './models/questions.json' assert {type:'json'};
 import personalities from './models/personalities.json' assert {type:'json'};
-async function loadJSON(url) {
-    const response = await fetch(url);
-    if (!response.ok) {
-        throw new Error(`Failed to load JSON from ${url}`);
-    }
-    return response.json();
-}
-
-//let questions, personalities;
-
-async function initialize() {
-    [questions, personalities] = await Promise.all([
-        loadJSON('./models/questions.json'),
-        loadJSON('./models/personalities.json')
-    ]);
-}
 
 let currentQuestionIndex = 0;
 let matches = [];
@@ -53,7 +37,6 @@ function loadQuestion() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    //await initialize();
     if (window.location.pathname.endsWith('quiz.html')) {
         loadQuestion();
     } else if (window.location.pathname.endsWith('results.html')) {
