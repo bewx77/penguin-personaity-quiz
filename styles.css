@@ -146,7 +146,7 @@ body {
     min-width: 100%;
 }
 
-.option:hover {
+.option:active {
     background-color:white;
     color: #444;
 }
