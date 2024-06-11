@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setUpHomePage();
     }
 
-    );
+});
 
 function selectOption(option) {
     matches = matches.concat(questions[currentQuestionIndex].options[option].matches);
