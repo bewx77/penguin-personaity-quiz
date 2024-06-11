@@ -123,7 +123,7 @@ function setUpAllPenguinsPage(){
     var modal = document.getElementById("myModal");
     var modalImg = document.getElementById("img01");
 
-    for (let i=1; i<17; i++){
+    for (var i=1; i<17; i++){
         var img = document.getElementById("img-" + i);
         img.onclick = function(){
         modal.style.display = "block";
