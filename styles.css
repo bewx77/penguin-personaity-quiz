@@ -205,6 +205,8 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    gap:10px;
 }
 
 #all-header-container {
@@ -218,8 +220,7 @@ body {
 }
 
 .gallery img {
-    padding: 10px;
-    width: 180px;
+    width: 150px;
 }
 
 .modal {
