@@ -74,7 +74,7 @@
     {
       "mbti": "INTJ",
       "image": "penguin_intj.png",
-      "name": "Aaron, the Architect Penguin",
+      "name": "Aidan, the Architect Penguin",
       "traits": ["frustrated at others incompetence", "understand concepts easily", "could not care less about social norms", "very stubborn"],
       "compatible": ["ENTP", "INTP"],
       "notCompatible": ["ESFP", "ISFP"]
