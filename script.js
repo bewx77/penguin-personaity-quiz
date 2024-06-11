@@ -1,5 +1,5 @@
-import questions from './models/questions.json' assert {type:'json'};
-import personalities from './models/personalities.json' assert {type:'json'};
+// import questions from './models/questions.json' assert {type:'json'};
+// import personalities from './models/personalities.json' assert {type:'json'};
 
 let currentQuestionIndex = 0;
 let matches = [];
