@@ -1,5 +1,5 @@
-// import questions from './models/questions.json' assert {type:'json'};
-// import personalities from './models/personalities.json' assert {type:'json'};
+import questions from './models/questions.json' assert {type:'json'};
+import personalities from './models/personalities.json' assert {type:'json'};
 async function loadJSON(url) {
     const response = await fetch(url);
     if (!response.ok) {
@@ -8,7 +8,7 @@ async function loadJSON(url) {
     return response.json();
 }
 
-let questions, personalities;
+//let questions, personalities;
 
 async function initialize() {
     [questions, personalities] = await Promise.all([
@@ -53,7 +53,7 @@ function loadQuestion() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    await initialize();
+    //await initialize();
     if (window.location.pathname.endsWith('quiz.html')) {
         loadQuestion();
     } else if (window.location.pathname.endsWith('results.html')) {
