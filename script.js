@@ -37,7 +37,6 @@ function loadQuestion() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    try{
     if (window.location.pathname.endsWith('quiz.html')) {
         loadQuestion();
     } else if (window.location.pathname.endsWith('results.html')) {
@@ -48,10 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     else {
         setUpHomePage();
     }
-}
-catch(err){
-    alert(err.message);
-}
+
     );
 
 function selectOption(option) {
