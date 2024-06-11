@@ -220,13 +220,16 @@ body {
 .gallery{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap:10px;
 }
 
 .gallery img {
-    width: 150px;
+    flex: 1 0 48%;
+    max-width: 48%;
+    box-sizing: border-box;
+    padding: 5px; 
 }
 
 .modal {
